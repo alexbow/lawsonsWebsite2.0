@@ -41,3 +41,10 @@ body {
 .card-title{
   text-align: center;
 }
+
+#contactMe{
+  background-color: blue;
+  margin-left: 1.75%;
+  margin-right: 1.75%;
+  border-color: blue;
+}

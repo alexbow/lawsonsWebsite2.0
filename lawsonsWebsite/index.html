@@ -32,7 +32,10 @@
 
   <!-- Page Content -->
   <div class="container">
-    <div id="waveform"></div>
+    <div id="progress"></div>
+    <div id="waveform" onclick="wavesurfer.playPause();">
+    <!-- wavesurfer.js will fill the content -->
+  </div>
     <div id="audioControls">
       <button onclick="wavesurfer.skipBackward()">
         Backward
@@ -172,7 +175,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.10/wavesurfer.min.js"></script>">
   <script src="js/WaveSurfer.js"></script>
 
 </body>

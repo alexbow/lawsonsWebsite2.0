@@ -18,4 +18,4 @@
       document.getElementById('progress').style.display = 'none';
     });
 
-    wavesurfer.load('../resources/sample.mp3');
+    wavesurfer.load('https://ia800301.us.archive.org/15/items/fire_and_ice_librivox/fire_and_ice_frost_apc_64kb.mp3');

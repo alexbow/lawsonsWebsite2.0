@@ -22,7 +22,8 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Lawson Cade</a>
+      <a class="navbar-brand" href="index.html">R. Lawson Cade</a>
+      <h3 class="navbar-brand">Audio Engineer | Sound Designer | Post Production | Voice Actor</h3>
     </div>
   </nav>
 
@@ -32,34 +33,59 @@
 
   <!-- Page Content -->
   <div class="container">
-    <div id="progress"></div>
-    <div id="waveform">
-    <!-- wavesurfer.js will fill the content -->
+    <div class="my-4">
+      <h1 id="lawson">R. Lawson Cade</h1>
+      <img src="./resources/headphones.png"></img>
+      <h3>Please turn on your sound for the optimal experience.</h3>
     </div>
-    <div id="audioControls">
-      <button onclick="wavesurfer.skipBackward()">
-        Backward
-      </button>
+    <div class="waveformContainer">
+      <div class="waveformBox">
+        <div id="progress">Loading Content...</div>
+        <div id="waveform">
+        <!-- wavesurfer.js will fill the content -->
+        </div>
+        <div class="playButton">
+          <button onclick="wavesurfer.playPause()">
+            <img src="./resources/playButton.png"></img>
+          </button>
+        </div>
+      </div>
 
-      <button onclick="wavesurfer.playPause()">
-        Play | Pause
-      </button>
+      <div class="waveformBox">
+        <div id="progress2">Loading Content...</div>
+        <div id="waveform2">
+        <!-- wavesurfer.js will fill the content -->
+        </div>
+        <div class="playButton">
+          <button onclick="wavesurfer2.playPause()">
+            <img src="./resources/playButton.png"></img>
+          </button>
+        </div>
+      </div>
 
-      <button onclick="wavesurfer.skipForward()">
-        Forward
-      </button>
-
-      <button onclick="wavesurfer.toggleMute()">
-        Toggle Mute
-      </button>
+      <div class="waveformBox">
+        <div id="progress3">Loading Content...</div>
+        <div id="waveform3">
+        <!-- wavesurfer.js will fill the content -->
+        </div>
+        <div class="playButton">
+          <button onclick="wavesurfer3.playPause()">
+            <img src="./resources/playButton.png"></img>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <h1 class="my-4">Lawson Cade</h1>
-    <h2 class="subTitle">Audio Engineer | Sound Designer | Post Production | Voice Actor</h2>
+    <div class="recording">
+      <h2>Ready to go? Hit Record to Begin!</h2>
+      <a href="#portfolio">
+      <img src="./resources/recordButton.png"></img>
+      </a>
+    </div>
 
+    <div id="portfolio"></div>
 
     <!-- Portfolio Section -->
-
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
@@ -177,6 +203,33 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
   <script src="js/WaveSurfer.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 
 </body>
 

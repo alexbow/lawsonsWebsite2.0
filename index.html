@@ -32,7 +32,27 @@
 
   <!-- Page Content -->
   <div class="container">
+    <div id="progress"></div>
+    <div id="waveform">
+    <!-- wavesurfer.js will fill the content -->
+    </div>
+    <div id="audioControls">
+      <button onclick="wavesurfer.skipBackward()">
+        Backward
+      </button>
 
+      <button onclick="wavesurfer.playPause()">
+        Play | Pause
+      </button>
+
+      <button onclick="wavesurfer.skipForward()">
+        Forward
+      </button>
+
+      <button onclick="wavesurfer.toggleMute()">
+        Toggle Mute
+      </button>
+    </div>
 
     <h1 class="my-4">Lawson Cade</h1>
     <h2 class="subTitle">Audio Engineer | Sound Designer | Post Production | Voice Actor</h2>
@@ -155,6 +175,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
+  <script src="js/WaveSurfer.js"></script>
 
 </body>
 

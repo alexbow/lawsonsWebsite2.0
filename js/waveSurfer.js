@@ -2,9 +2,9 @@
       // Use the id or class-name of the element you created, as a selector
       container: '#waveform',
       // The color can be either a simple CSS color or a Canvas gradient
-      progressColor: '#00A91D',
-      cursorColor: '#00A91D',
-      waveColor: 'rgba(0, 169, 29, 0.6)',
+      progressColor: '#FF5C58',
+      cursorColor: '#FF5C58',
+      waveColor: 'rgba(236, 10, 4, 0.6)',
       // This parameter makes the waveform look like SoundCloud's player
       barWidth: 3
     });
@@ -24,9 +24,9 @@
       // Use the id or class-name of the element you created, as a selector
       container: '#waveform2',
       // The color can be either a simple CSS color or a Canvas gradient
-      progressColor: '#1341BD',
-      cursorColor: '#1341BD',
-      waveColor: 'rgba(0,0,255, 0.6)',
+      progressColor: '#8BB8ED',
+      cursorColor: '#8BB8ED',
+      waveColor: 'rgba(24, 107, 206, 0.6)',
       // This parameter makes the waveform look like SoundCloud's player
       barWidth: 3
     });
@@ -45,9 +45,9 @@
       // Use the id or class-name of the element you created, as a selector
       container: '#waveform3',
       // The color can be either a simple CSS color or a Canvas gradient
-      progressColor: '#DD1000',
-      cursorColor: '#DD1000',
-      waveColor: 'rgba(221, 16, 0 ,0.6)',
+      progressColor: '#46B55F',
+      cursorColor: '#46B55F',
+      waveColor: 'rgba(41, 162, 68, 0.6)',
       // This parameter makes the waveform look like SoundCloud's player
       barWidth: 3
     });

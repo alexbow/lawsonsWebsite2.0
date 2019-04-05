@@ -12,6 +12,7 @@ h1 {
   font-size: 1em;
   font-weight: bold;
   margin-right: 2%;
+  padding-left: 37%;
 }
 
 h2 {
@@ -74,7 +75,6 @@ a:visited {
   text-align: center;
   width: 100%;
   top: 0px;
-  padding-left: 37%;
   padding-bottom: .75%;
 }
 
@@ -95,7 +95,6 @@ a:visited {
   text-align: center;
   width: 100%;
   top: 0px;
-  padding-left: 37%;
   padding-bottom: .75%;
 }
 
@@ -105,6 +104,26 @@ a:visited {
 
 .blueText {
   color: #96AFE5;
+}
+
+.menuGreen {
+  background: rgba(9, 176, 82, 0.75);
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  font-size: 2vw;
+  text-align: center;
+  width: 100%;
+  top: 0px;
+  padding-bottom: .75%;
+}
+
+.menuGreen:hover {
+  background: rgba(0, 93, 40);
+}
+
+.greenText {
+  color: #8FE9B6;
 }
 
 .content {

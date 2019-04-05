@@ -26,11 +26,11 @@ a{
   background:
     /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(22, 35, 46, 0.45),
-      rgba(22, 35, 46, 0.45)
+      rgba(7, 25, 41, 0.45),
+      rgba(7, 25, 41, 0.45)
     ),
     /* bottom, image */
-    url("../resources/frontPage.jpg");
+    url("../resources/blackAndWhiteFrontPage.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,6 +78,13 @@ a{
 
 .card-title a {
   color: #EBEBEB;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  height: 300px;
 }
 
 #contactMe {

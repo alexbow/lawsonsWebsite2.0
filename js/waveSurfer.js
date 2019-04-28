@@ -2,11 +2,13 @@
       // Use the id or class-name of the element you created, as a selector
       container: '#waveform',
       // The color can be either a simple CSS color or a Canvas gradient
-      progressColor: '#FF5C58',
-      cursorColor: '#FF5C58',
-      waveColor: 'rgba(236, 10, 4, 0.6)',
+      progressColor: '#FF3E43',
+      cursorColor: '#FF3E43',
+      waveColor: 'rgba(254, 0, 6, 0.6)',
       // This parameter makes the waveform look like SoundCloud's player
-      barWidth: 3
+      barWidth: 3,
+      hideScrollbar: true,
+      fillParent: true
     });
 
     wavesurfer.on('loading', function (percents) {
@@ -24,11 +26,13 @@
       // Use the id or class-name of the element you created, as a selector
       container: '#waveform2',
       // The color can be either a simple CSS color or a Canvas gradient
-      progressColor: '#8BB8ED',
-      cursorColor: '#8BB8ED',
-      waveColor: 'rgba(24, 107, 206, 0.6)',
+      progressColor: '#3DDC98',
+      cursorColor: '#3DDC98',
+      waveColor: 'rgba(22, 186, 116, 0.6)',
       // This parameter makes the waveform look like SoundCloud's player
-      barWidth: 3
+      barWidth: 3,
+      hideScrollbar: true,
+      fillParent: true
     });
 
     wavesurfer2.on('loading', function (percents) {
@@ -45,12 +49,14 @@
       // Use the id or class-name of the element you created, as a selector
       container: '#waveform3',
       // The color can be either a simple CSS color or a Canvas gradient
-      progressColor: '#46B55F',
-      cursorColor: '#46B55F',
-      waveColor: 'rgba(41, 162, 68, 0.6)',
+      progressColor: '#CA4CD3',
+      cursorColor: '#CA4CD3',
+      waveColor: 'rgba(127, 26, 134, 0.6)',
       // This parameter makes the waveform look like SoundCloud's player
-      barWidth: 3
-    });
+      barWidth: 3,
+      hideScrollbar: true,
+      fillParent: true
+      });
 
     wavesurfer3.on('loading', function (percents) {
       document.getElementById('progress3').value = percents;

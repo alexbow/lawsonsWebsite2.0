@@ -209,7 +209,7 @@ a{
   background: rgba(61, 220, 152, 0.6);
 }
 
-.blue:before {
+.purple:before {
   background: rgba(156, 58, 163, 0.6);
 }
 
@@ -221,14 +221,14 @@ a{
   background: rgba(254, 0, 6, 0.8);
 }
 
-#blue {
-  background: rgba(127, 26, 134, 0.8);
+#purple {
+  background: rgba(127, 26, 134);
 }
 
 /* ===========================Footer================================= */
 
 #contactMe {
-  background: rgba(59, 130, 216);
+  background: rgba(127, 26, 134);
   margin-left: 1.75%;
   margin-right: 1.75%;
   border: rgba(59, 130, 216);

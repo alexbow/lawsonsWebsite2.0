@@ -154,3 +154,39 @@ a:visited {
   font-size: 2vw;
   text-align: center;
 }
+
+
+/* ==================Music Production================ */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.musicDetails {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: darkgray;
+}
+
+.musicRow{
+  display: inline-flex;
+  width: 100%;
+}
+
+.musicSubTitle{
+  padding-left: 1%;
+}

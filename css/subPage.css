@@ -90,7 +90,7 @@ a:visited {
 }
 
 .menuRed {
-  background: rgba(254, 0, 6, 0.75);
+  background: rgba(254, 0, 6);
   position: fixed;
   font-size: 2vw;
   width: 100%;
@@ -109,7 +109,7 @@ a:visited {
 }
 
 .menuPurple {
-  background: rgba(156, 58, 163, 0.75);
+  background: rgba(156, 58, 163);
   position: fixed;
   font-size: 2vw;
   width: 100%;
@@ -128,7 +128,7 @@ a:visited {
 }
 
 .menuGreen {
-  background: rgba(61, 220, 152, 0.75);
+  background: rgba(61, 220, 152);
   position: fixed;
   font-size: 2vw;
   width: 100%;

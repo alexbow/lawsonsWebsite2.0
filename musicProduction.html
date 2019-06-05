@@ -19,8 +19,8 @@
     <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
     <script src="js/musicProduction.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-   
+
+
 
   </head>
 
@@ -40,15 +40,21 @@
         <div class="title">
           <h1>Music Production</h1>
         </div>
-        
-        <p>One of the most satisfying aspects of being an audio engineer is not only being a key facet of 
-          taking an idea and turning it into a reality, but being a facilitator for art to flourish. Below you 
+
+        <p>One of the most satisfying aspects of being an audio engineer is not only being a key facet of
+          taking an idea and turning it into a reality, but being a facilitator for art to flourish. Below you
           will find a wide spread of, “sonic vignettes,” from projects I have worked on</p>
 
           <div class="Music Portfolio">
-            <button class="collapsible">The Dive</button>
+            <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">The Dive</button>
               <div class="musicDetails">
-
+                <div>
+                  <div id="progress">Loading Content...</div>
+                  <div id="theDive">
+                    <!-- wavesurfer.js will fill the content -->
+                  </div>
+                  <script>theDive()</script>
+                </div>
               <div class="musicRow">
                 <p>Service: </p>
                 <p class="musicSubTitle">Recording & Mixing Engineer</p>
@@ -85,9 +91,15 @@
               </div>
             </div>
 <!-- ===================================================================================== -->
-            <button class="collapsible">Addicted To You</button>
+            <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Addicted To You</button>
               <div class="musicDetails">
-
+                <div>
+                  <div id="progress">Loading Content...</div>
+                  <div id="addictedToYou">
+                    <!-- wavesurfer.js will fill the content -->
+                  </div>
+                  <script>addictedToYou()</script>
+                </div>
               <div class="musicRow">
                 <p>Service: </p>
                 <p class="musicSubTitle">Recording, Mixing, & Mastering Engineer</p>
@@ -112,14 +124,14 @@
                   <p>Location: </p>
                   <p class="musicSubTitle">Syracuse, New York</p>
               </div>
-              
+
               <div class="musicRow">
                   <p>Year: </p>
                   <p class="musicSubTitle">2019</p>
               </div>
             </div>
 <!-- ======================================================================================== -->
-              <button class="collapsible">Noose</button>
+              <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Noose</button>
               <div class="musicDetails">
 
               <div class="musicRow">
@@ -151,14 +163,14 @@
                   <p>Location: </p>
                   <p class="musicSubTitle">Syracuse, New York</p>
               </div>
-              
+
               <div class="musicRow">
                   <p>Year: </p>
                   <p class="musicSubTitle">2019</p>
               </div>
             </div>
 <!-- ======================================================================================== -->
-            <button class="collapsible">Allison Nichols' Senior Vocal Recital</button>
+            <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Allison Nichols' Senior Vocal Recital</button>
             <div class="musicDetails">
 
             <div class="musicRow">
@@ -185,7 +197,7 @@
                 <p>Location: </p>
                 <p class="musicSubTitle">Towson, Maryland</p>
             </div>
-            
+
             <div class="musicRow">
                 <p>Year: </p>
                 <p class="musicSubTitle">2017</p>
@@ -193,7 +205,7 @@
           </div>
 
 <!-- ======================================================================================== -->
-          <button class="collapsible">Orange Television Network</button>
+          <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Orange Television Network</button>
           <div class="musicDetails">
 
           <div class="musicRow">
@@ -208,7 +220,7 @@
 
           <div class="musicRow">
               <p>Recorded At: </p>
-              <p class="musicSubTitle">Syracuse University’s S.I. Newhouse 
+              <p class="musicSubTitle">Syracuse University’s S.I. Newhouse
                 School of Public Communications - Dick Clark Studios</p>
           </div>
 
@@ -216,7 +228,7 @@
               <p>Location: </p>
               <p class="musicSubTitle">Syracuse, New York</p>
           </div>
-          
+
           <div class="musicRow">
               <p>Year: </p>
               <p class="musicSubTitle">2019</p>
@@ -225,7 +237,7 @@
 
 
 <!-- ======================================================================================== -->
-        <button class="collapsible">Snowmen</button>
+        <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Snowmen</button>
         <div class="musicDetails">
 
         <div class="musicRow">
@@ -237,7 +249,7 @@
             <p>Category: </p>
             <p class="musicSubTitle">Single</p>
         </div>
-        
+
         <div class="musicRow">
             <p>Written By: </p>
             <a class="musicSubTitle" href="https://www.facebook.com/AbeSusman" target="_blank">Abe Susman</a>
@@ -245,7 +257,7 @@
 
         <div class="musicRow">
             <p>Recorded At: </p>
-            <p class="musicSubTitle">Syracuse University’s S.I. Newhouse 
+            <p class="musicSubTitle">Syracuse University’s S.I. Newhouse
               School of Public Communications Studio 3</p>
         </div>
 
@@ -253,7 +265,7 @@
             <p>Location: </p>
             <p class="musicSubTitle">Syracuse, New York</p>
         </div>
-        
+
         <div class="musicRow">
             <p>Year: </p>
             <p class="musicSubTitle">2019</p>
@@ -261,7 +273,7 @@
       </div>
 
 <!-- ======================================================================================== -->
-      <button class="collapsible">Opening Night</button>
+      <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Opening Night</button>
       <div class="musicDetails">
 
       <div class="musicRow">
@@ -273,7 +285,7 @@
           <p>Category: </p>
           <p class="musicSubTitle">EP</p>
       </div>
-      
+
       <div class="musicRow">
           <p>Vocals By: </p>
           <a class="musicSubTitle" href="https://www.facebook.com/amwarfield24" target="_blank">Ashley M. Warfield</a>
@@ -293,7 +305,7 @@
           <p>Location: </p>
           <p class="musicSubTitle">Syracuse, New York</p>
       </div>
-      
+
       <div class="musicRow">
           <p>Year: </p>
           <p class="musicSubTitle">2019</p>
@@ -302,7 +314,7 @@
 
 
 <!-- ======================================================================================== -->
-    <button class="collapsible">Matador - 2019 Remix</button>
+    <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Matador - 2019 Remix</button>
     <div class="musicDetails">
 
     <div class="musicRow">
@@ -329,7 +341,7 @@
         <p>Location: </p>
         <p class="musicSubTitle">Towson, Maryland</p>
     </div>
-    
+
     <div class="musicRow">
         <p>Year: </p>
         <p class="musicSubTitle">2017</p>
@@ -342,7 +354,7 @@
   </div>
 
 <!-- ======================================================================================== -->
-  <button class="collapsible">Quixotic</button>
+  <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Quixotic</button>
   <div class="musicDetails">
 
   <div class="musicRow">
@@ -379,7 +391,7 @@
       <p>Location: </p>
       <p class="musicSubTitle">Syracuse, New York</p>
   </div>
-  
+
   <div class="musicRow">
       <p>Year: </p>
       <p class="musicSubTitle">2019</p>

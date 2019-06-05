@@ -11,9 +11,16 @@
                 musicDetails.style.maxHeight = null;
             } else {
                 musicDetails.style.maxHeight = musicDetails.scrollHeight + "px";
-            } 
+            }
         });
         }
+    }
+
+    function closeOtherTabs(id) {
+      var activeTab = document.getElementsByClassName("collapsible active")[0];
+      if(activeTab){
+        activeTab.click()
+      }
     }
 
     function theDive() {
@@ -39,4 +46,29 @@
         });
 
         theDive.load('./resources/Orchestration.MP3');
+    }
+
+    function addictedToYou() {
+      var addictedToYou = WaveSurfer.create({
+          // Use the id or class-name of the element you created, as a selector
+          container: '#addictedToYou',
+          // The color can be either a simple CSS color or a Canvas gradient
+          progressColor: '#FF3E43',
+          cursorColor: '#FF3E43',
+          waveColor: 'rgba(254, 0, 6, 0.6)',
+          // This parameter makes the waveform look like SoundCloud's player
+          barWidth: 3,
+          hideScrollbar: true,
+          fillParent: true
+      });
+
+      addictedToYou.on('loading', function (percents) {
+          document.getElementById('progress').value = percents;
+      });
+
+      addictedToYou.on('ready', function (percents) {
+          document.getElementById('progress').style.display = 'none';
+      });
+
+      addictedToYou.load('./resources/Orchestration.MP3');
     }

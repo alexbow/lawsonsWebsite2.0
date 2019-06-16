@@ -16,12 +16,24 @@
         }
     }
 
+    var previousTab;
+    var allTabsClosed = true;
+
     function closeOtherTabs(id) {
       var activeTab = document.getElementsByClassName("collapsible active")[0];
-      console.log(id)
       if(activeTab){
         activeTab.click()
+        allTabsClosed = false;
       }
+      if(previousTab == id && allTabsClosed != true){
+        id.click();
+        previousTab = null;
+        allTabsClosed = true;
+      }
+      else{
+        allTabsClosed = false;
+      }
+      previousTab = id;
     }
 
     function theDive() {

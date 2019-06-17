@@ -83,7 +83,7 @@
           document.getElementById('progress2').style.display = 'none';
       });
 
-      addictedToYou.load('./resources/Orchestration.MP3');
+      addictedToYou.load('./resources/audio/GSM - Original Works Showcase/GSM - Original Works Showcase1.wav');
     }
 
     function noose() {
@@ -158,7 +158,7 @@
           document.getElementById('progress5').style.display = 'none';
       });
 
-      orange.load('./resources/Orchestration.MP3');
+      orange.load('./resources/audio/Honda Mesa - OTN Showcase1.wav');
     }
 
     function snowmen() {

@@ -14,8 +14,10 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/subPage.css" rel="stylesheet">
-    <script src="js/musicProduction.js"></script>
-    
+    <script src="js/podcastProduction.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js@2.2.1/dist/wavesurfer.min.js"></script>
+
+
 
   </head>
 
@@ -44,7 +46,7 @@
           business, I pledge to not only provide the means to produce a
           podcast but to offer creative consultation towards your production.</p>
 
-          <button class="collapsible">In-Transit</button>
+          <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">In-Transit</button>
           <div class="musicDetails">
             <div class="musicRow">
               <p>Service: </p>
@@ -64,7 +66,7 @@
 
 <!-- =============================================== -->
 
-          <button class="collapsible">First Cousins</button>
+          <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">First Cousins</button>
           <div class="musicDetails">
             <div class="musicRow">
               <p>Service: </p>
@@ -84,8 +86,15 @@
 
 <!-- =============================================== -->
 
-          <button class="collapsible">Towson University’s What’s Your Story Podcast</button>
+          <button class="collapsible" id="collapsible" onclick="closeOtherTabs(this)">Towson University’s What’s Your Story Podcast</button>
           <div class="musicDetails">
+            <div>
+              <div id="progress">Loading Content...</div>
+              <div id="towson">
+                <!-- wavesurfer.js will fill the content -->
+              </div>
+              <script>towson()</script>
+            </div>
             <div class="musicRow">
               <p>Service: </p>
               <p class="musicSubTitle">Co - Recording, Mixing, & Producer</p>

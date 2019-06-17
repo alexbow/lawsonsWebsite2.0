@@ -45,7 +45,7 @@ a{
       rgba(0, 13, 26, 0.7)
     ),
     /* bottom, image */
-    url("../resources/blackAndWhiteFrontPage.jpg");
+    url("../resources/images/blackAndWhiteFrontPage.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;

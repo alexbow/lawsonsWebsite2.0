@@ -74,7 +74,7 @@ a:visited {
       rgba(7, 25, 41, 0.45)
     ),
     /* bottom, image */
-    url("../resources/About2.jpg");
+    url("../resources/images/About2.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,4 +189,11 @@ a:visited {
 
 .musicSubTitle{
   padding-left: 1%;
+}
+
+.albumArt {
+  height: auto;
+  width: 20%;
+  padding-top: 2%;
+  display: inline;
 }

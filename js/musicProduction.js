@@ -58,7 +58,7 @@
             document.getElementById('progress').style.display = 'none';
         });
 
-        theDive.load('./resources/Orchestration.MP3');
+        theDive.load('./resources/audio/KW - The Dive Showcase/KW - The Dive Showcase1.wav');
     }
 
     function addictedToYou() {
@@ -76,11 +76,11 @@
       });
 
       addictedToYou.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress2').value = percents;
       });
 
       addictedToYou.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress2').style.display = 'none';
       });
 
       addictedToYou.load('./resources/Orchestration.MP3');
@@ -101,14 +101,14 @@
       });
 
       noose.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress3').value = percents;
       });
 
       noose.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress3').style.display = 'none';
       });
 
-      noose.load('./resources/Orchestration.MP3');
+      noose.load('./resources/audio/STEF - Noose [Official Single]/SW - NOOSE [M4_05192019].wav');
     }
 
     function allison() {
@@ -126,14 +126,14 @@
       });
 
       allison.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress4').value = percents;
       });
 
       allison.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress4').style.display = 'none';
       });
 
-      allison.load('./resources/Orchestration.MP3');
+      allison.load('./resources/audio/AN - 2017TUSeniorVocalRecital/AN - TUSeniorVoxRecitalShowcase1.wav');
     }
 
     function orange() {
@@ -151,11 +151,11 @@
       });
 
       orange.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress5').value = percents;
       });
 
       orange.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress5').style.display = 'none';
       });
 
       orange.load('./resources/Orchestration.MP3');
@@ -176,11 +176,11 @@
       });
 
       snowmen.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress6').value = percents;
       });
 
       snowmen.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress6').style.display = 'none';
       });
 
       snowmen.load('./resources/Orchestration.MP3');
@@ -201,14 +201,14 @@
       });
 
       openingNight.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress7').value = percents;
       });
 
       openingNight.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress7').style.display = 'none';
       });
 
-      openingNight.load('./resources/Orchestration.MP3');
+      openingNight.load('./resources/audio/AMW - Opening Night Showcase1.wav');
     }
 
     function matador() {
@@ -226,14 +226,14 @@
       });
 
       matador.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress8').value = percents;
       });
 
       matador.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress8').style.display = 'none';
       });
 
-      matador.load('./resources/Orchestration.MP3');
+      matador.load('./resources/audio/Patchwork Fools/MATADORK - [REMIX05032019].wav');
     }
 
     function quixotic() {
@@ -251,11 +251,11 @@
       });
 
       quixotic.on('loading', function (percents) {
-          document.getElementById('progress').value = percents;
+          document.getElementById('progress9').value = percents;
       });
 
       quixotic.on('ready', function (percents) {
-          document.getElementById('progress').style.display = 'none';
+          document.getElementById('progress9').style.display = 'none';
       });
 
       quixotic.load('./resources/Orchestration.MP3');

@@ -19,7 +19,7 @@
       document.getElementById('progress').style.display = 'none';
     });
 
-    wavesurfer.load('./resources/Orchestration.MP3');
+    wavesurfer.load('./resources/audio/Intro VO Words/PortfolioWord_Record1.wav');
 
 
     var wavesurfer2 = WaveSurfer.create({
@@ -43,7 +43,7 @@
       document.getElementById('progress2').style.display = 'none';
     });
 
-    wavesurfer2.load('./resources/Orchestration.MP3');
+    wavesurfer2.load('./resources/audio/Intro VO Words/PortfolioWord_Listen2.wav');
 
     var wavesurfer3 = WaveSurfer.create({
       // Use the id or class-name of the element you created, as a selector
@@ -66,4 +66,4 @@
       document.getElementById('progress3').style.display = 'none';
     });
 
-    wavesurfer3.load('./resources/Orchestration.MP3');
+    wavesurfer3.load('./resources/audio/Intro VO Words/PortfolioWord_Facilitate1.wav');
